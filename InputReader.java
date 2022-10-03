@@ -46,7 +46,7 @@ public class InputReader {
                 case 'R':
                     if (thingsNeeded.containsKey(inputArray[2])) {
                         Ingredient ingredientAgain = thingsNeeded.get(inputArray[2]);
-                        ingredientAgain.setQuantity(Integer.parseInt(inputArray[0]));
+                        ingredientAgain.setCorrectQuantity(Integer.parseInt(inputArray[0]));
                     } else {
                         thingsNeeded.put(inputArray[2], new Ingredient(Integer.parseInt(inputArray[0]), inputArray[1], inputArray[2]));
                     }

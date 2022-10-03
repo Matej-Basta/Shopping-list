@@ -1,8 +1,8 @@
 public class Main {
 
     public static void main(String[] args) {
-        InputReader inputReader = new InputReader();
-        inputReader.readInput();
+        ShoppingList shoppingList = new ShoppingList();
+        shoppingList.printShoppingList();
     }
 
 }

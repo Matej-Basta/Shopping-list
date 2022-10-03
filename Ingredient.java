@@ -10,8 +10,16 @@ public class Ingredient {
         this.name = name;
     }
 
-    public void setQuantity(int amount) {
+    public void setCorrectQuantity(int amount) {
         this.amount += amount;
+    }
+
+    public void updateQuantity(int amount) {
+        this.amount -= amount;
+    }
+
+    public int getAmount() {
+        return amount;
     }
 
     public String toString() {
