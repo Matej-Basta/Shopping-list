@@ -10,4 +10,11 @@ public class Ingredient {
         this.name = name;
     }
 
+    public void setQuantity(int amount) {
+        this.amount += amount;
+    }
+
+    public String toString() {
+        return amount + " " + unit + " " + name;
+    }
 }
